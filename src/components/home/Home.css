@@ -1,0 +1,48 @@
+.Intro {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Josefin Sans';
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.ContactMe {
+    width: 15%;
+    height: 30px;
+    margin: 0 auto;
+    text-transform: none !important;
+    background-color: transparent;
+    border-radius: 3px;
+    border: .5px solid grey;
+    color:white;
+}
+
+.Intro-Background {
+    background-image: url("../../images/rail.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Intro > * {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.Intro > div > * {
+    margin: 10px;
+}
+
+.Intro > h1 {
+    font-size: 2.75em;
+}
+
+.Intro > h2 {
+    font-size: 1.75em;
+}
+
+.Seperator {
+    border-top: 5px solid rgba(255, 255, 255, 0.75);
+    width: 30%;
+}

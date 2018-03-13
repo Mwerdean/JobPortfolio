@@ -1,0 +1,93 @@
+.BGSkill {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding-top: 150px;
+}
+
+.DontType h1{
+    opacity: 0;
+}
+
+.DontType {
+       margin-bottom: 20px;
+}
+.typewriter h1 {
+    opacity: 1;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      width: 35%;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+  body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 50vh;
+  margin: 0 auto;
+}
+.container div {
+  flex: 1;
+  height: 50vh;
+  transition: flex 0.5s ease-out;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+}
+.container div h1 {
+  padding-top: 40vh;
+  transition: color 0.5s ease-out;
+}
+.container .left {
+  border-right: 1px solid black;
+}
+.container .left:hover {
+  flex: 1.5;
+}
+.container .left:hover h1 {
+  color: black;
+}
+.container .left::after {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
+.container .right {
+  border-left: 1px solid black;
+}
+.container .right:hover {
+  flex: 1.5;
+}
+.container .right:hover h1 {
+  color: black;
+}
+
+.ShowList {
+    opacity: 0;
+}
+
+ .ShowList:hover {
+    opacity: 1;
+}

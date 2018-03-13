@@ -1,0 +1,69 @@
+.Flex {
+    display: flex;
+}
+
+.FCenter {
+    justify-content: center;
+}
+
+.Line {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.25);
+    width: 30%;
+    margin: 2em;
+}
+
+.AboutInfo {
+    margin-bottom: 50px;
+}
+
+.AboutDsc {
+    height: 30vh;
+    text-align: left;
+    margin:0 auto;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.AboutDsc > div {
+  margin-right: 10px;  
+}
+
+.translate-enter {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.translate-enter.translate-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 3s ease-out
+}
+
+.translateR-enter {
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.translateR-enter.translateR-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 3s ease-out
+}
+
+.NoTranslate {
+    opacity: 0;
+}
+
+.ShowTranslate {
+    opacity: 1;
+}
+
+
+
+.Computer > img {
+   height: 150px;
+   width: 150px;
+   border-radius: 75px;
+   margin: 10px;
+}
+
